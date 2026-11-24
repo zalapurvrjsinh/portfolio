@@ -8,5 +8,4 @@ A clean, responsive personal portfolio website showcasing my academic background
 - **JavaScript (ES6)** (Dark mode toggle, mobile navigation menu, client-side form validation)
 
 ## Live Demo
-- View Live Portfolio on GitHub Pages : https://github.com/zalapurvrjsinh
-
+- [Open the live portfolio](https://zalapurvrjsinh.github.io/portfolio/)
