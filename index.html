@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purvarajsinh Zala | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#about" class="logo">Purvarajsinh<span class="dot">.</span></a>
+
+      <button id="menu-toggle" class="menu-btn" aria-label="Toggle Menu">☰</button>
+
+      <nav id="navbar" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-btn" type="button">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Asymmetric Hero / About Section -->
+    <section id="about" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <div class="status-pill">
+            <span class="pulse-dot"></span> Open to internships & collaborations
+          </div>
+          <h1>Building clean web apps & interactive interfaces.</h1>
+          <p class="bio">
+            I’m <strong>Purvarajsinh Zala</strong>, an IT undergraduate at JG University, Ahmedabad
+            (Diploma in IT, Sir Bhavsinhji Polytechnic Institute). I enjoy building full-stack web
+            applications, responsive websites, and practical JavaScript tools.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary-btn">Explore Projects</a>
+            <a href="#contact" class="btn ghost-btn">Get in Touch</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="profile-panel">
+            <p class="panel-label">QUICK SNAPSHOT</p>
+            <ul class="snapshot-list">
+              <li><span>Degree</span><strong>B.Tech IT & AI/ML</strong></li>
+              <li><span>Base</span><strong>Gujarat, India</strong></li>
+              <li><span>Focus</span><strong>Web Development</strong></li>
+              <li><span>Diploma CPI</span><strong>8.14 / 10</strong></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Editorial Skills Layout -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">01</span>
+          <h2>Technical Stack</h2>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-row">
+            <h3 class="skill-category">Frontend & UI</h3>
+            <div class="skill-pills">
+              <span>HTML5</span>
+              <span>CSS3 / Flexbox / Grid</span>
+              <span>JavaScript (ES6+)</span>
+              <span>React</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <h3 class="skill-category">Backend & Databases</h3>
+            <div class="skill-pills">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>SQL & SQLite</span>
+              <span>REST APIs & JWT</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <h3 class="skill-category">Languages & Tools</h3>
+            <div class="skill-pills">
+              <span>Python</span>
+              <span>Java (OOP & JDBC)</span>
+              <span>Git & GitHub</span>
+              <span>VS Code</span>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filtered Projects List -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header-flex">
+          <div class="section-header">
+            <span class="section-index">02</span>
+            <h2>Selected Work</h2>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="fullstack" type="button">Full-Stack</button>
+            <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+          </div>
+        </div>
+
+        <div class="project-showcase">
+          <article class="project-item" data-category="fullstack">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+              <span class="project-type">Full-Stack Web App</span>
+            </div>
+            <div class="project-body">
+              <h3>Auto Car Care</h3>
+              <p>
+                End-to-end vehicle service management platform with customer booking workflows,
+                role-based JWT authentication, and RESTful API integration.
+              </p>
+              <div class="tech-line">React • Node.js • Express • MongoDB</div>
+            </div>
+            <div class="project-arrow">↗</div>
+          </article>
+
+          <article class="project-item" data-category="frontend">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+              <span class="project-type">Productivity Web App</span>
+            </div>
+            <div class="project-body">
+              <h3>TaskFlow — Study & Daily Planner</h3>
+              <p>
+                A lightweight task manager with priority tags, subject filtering, progress tracking,
+                and automatic browser storage using LocalStorage so tasks stay saved across sessions.
+              </p>
+              <div class="tech-line">HTML5 • CSS3 • JavaScript • LocalStorage</div>
+            </div>
+            <div class="project-arrow">↗</div>
+          </article>
+
+          <article class="project-item" data-category="frontend">
+            <div class="project-meta">
+              <span class="project-num">03</span>
+              <span class="project-type">API Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3>SkyCast — Live Weather Dashboard</h3>
+              <p>
+                A responsive weather forecast interface that fetches real-time temperature, humidity,
+                and wind conditions for any searched city using asynchronous JavaScript Fetch API.
+              </p>
+              <div class="tech-line">HTML5 • CSS Grid • JavaScript • REST API</div>
+            </div>
+            <div class="project-arrow">↗</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Contact Section -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-header">
+            <span class="section-index">03</span>
+            <h2>Let’s Connect</h2>
+          </div>
+          <p class="bio">
+            Have a project idea, internship opportunity, or feedback on my work? Fill out the form
+            and I’ll get back to you promptly.
+          </p>
+          <div class="contact-highlights">
+            <p><strong>Location:</strong> Bhavnagar / Ahmedabad, Gujarat</p>
+            <p><strong>GitHub:</strong> github.com/Purvarajsinh</p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary-btn full-btn">Send Message</button>
+          <p id="form-feedback" class="feedback-msg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 Purvarajsinh Zala</p>
+      <p class="footer-note">Crafted with semantic HTML, CSS & Vanilla JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
